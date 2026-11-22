@@ -1,0 +1,6 @@
+- insert:
+    - id: aih-dsh-gateway
+      name: "@aih/dsh-gateway/deepseek"
+      config:
+        enabled: true
+        baseUrl: "http://127.0.0.1:9527"

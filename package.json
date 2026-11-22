@@ -1,0 +1,31 @@
+{
+  "name": "@aih/dsh-gateway",
+  "version": "0.1.1",
+  "description": "DeepSeek Harness native plugin: expose AIH gateway health as a tool",
+  "type": "module",
+  "main": "dist/deepseek.js",
+  "exports": {
+    "./deepseek": "./dist/deepseek.js"
+  },
+  "files": [
+    "dist",
+    "patch.yml",
+    "README.md"
+  ],
+  "dsh": {
+    "bundle": {
+      "patch": "./patch.yml"
+    }
+  },
+  "agentPlugin": {
+    "pluginId": "aih-dsh-gateway",
+    "manifestVersion": 1,
+    "engines": {
+      "deepseek": ">=0.0.0"
+    }
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "license": "MIT"
+}
